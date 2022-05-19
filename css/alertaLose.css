@@ -45,29 +45,16 @@ i{
     flex-direction: column;
     justify-content: right;
     align-items: center;
-   // animation: aparecer 1s;
+
 
 
 }
 @keyframes aparecer {
-    0% {
-        transform:translateX(1000px);
-    }
-    80% {
-        transform:translateX(0px);
-        border-radius:75px;
-        height:75px;
-        width:75px;
-    }
-    90% {
-        border-radius:3px;
-        height:182px;
-        width:247px;
-    }
-    100% {
-        border-radius:3px;
-        height:162px;
-        width:227px;
+  from{
+      opacity: 0;
+  }
+    to{
+        opacity: 100;
     }
 }
 
@@ -76,7 +63,7 @@ i{
 
     position: relative;
     margin:0 auto;
-    width: 70%;
+    width: 90%;
     height: 20%;
    // background: red;
     //align-items:;
@@ -84,10 +71,16 @@ i{
 
 }
 .b-alerta{
-    width: 200px;
-    margin: 10px auto;
 
+    width: 200px;
+    margin: 0 auto;
+    height: 80px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    color: black;
+    cursor: pointer;
 }
+
 #novamente {
     border:0;
 

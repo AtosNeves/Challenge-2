@@ -379,6 +379,7 @@ function comparaListas(letra,botao) {
             setTimeout(function(){
                 //document.querySelector(".forca-div").style.animation ="perdeu 0.5s forwards";
                 //window.alert("falou");
+                document.querySelector("#modal-final").style.animation=" aparecer 0.5s";
                 document.querySelector("#modal-final").style.visibility="visible";
                 console.log("Executed after 3 second");
             }, 3000);
