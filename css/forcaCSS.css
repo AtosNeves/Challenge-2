@@ -1,0 +1,236 @@
+.forca-div{
+
+    position: relative;
+    width: 70%;
+    height: 400px;
+    background: url("../images/forca.svg") left no-repeat #636E72;
+    background-size: contain;
+    //background-position: right 10px  ;
+    margin: 20px auto;
+    border-radius: 20px;
+    animation: forca-div forwards 0.5s;
+    border: 20px solid #636E72;
+
+
+}
+
+@keyframes forca-div {
+
+    from{
+        transform: translateY(-10px);
+
+
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+
+.palavras-jogo{
+    position: relative;
+    width: 60%;
+    height: 85%;
+    //background: black;
+    left: 30%;
+    top: 7%;
+
+
+}
+.centralizar{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+
+}
+.letras-entrada{
+    position: relative;
+    top: 40%;
+    display: inline-block;
+
+    width: 25px;
+    text-align: center;
+    border-bottom: 3px solid  #fffffe;
+    padding: 3px;
+    margin: 2px 6px;
+    color: #fffffe;
+    animation: entrada 2s forwards;
+}
+
+@keyframes entrada {
+
+    to{
+        opacity: 100;
+    }
+
+    from{
+        opacity: 0;
+    }
+
+}
+
+
+
+#palavra-sorteada{
+    left: 70px;
+    position: relative;
+    width: fit-content;
+    height: 150px;
+//background:red;
+    margin: 35px auto;
+    top: 25%;
+    font-size: 3em;
+    font-family: 'Dosis', sans-serif;
+
+
+
+}
+#categoria-palavra{
+
+    position: relative;
+    width: 80%;
+    height: 80px;
+    left: 60px;
+    margin: 10px auto;
+    padding-top: 1%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    top: 50px;
+    color: #fffffe;
+
+
+}
+
+.teclado{
+    width: 75%;
+    height: 250px;
+    margin: 20px auto;
+    right: 200px;
+    display:block;
+    justify-content: center;
+    padding-left: 65px;
+
+}
+.alfabeto{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+
+    margin: 10px 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px ;
+
+}
+.botao-letra{
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    background:#ff8906;
+    border-width: 0;
+    color:#fffffe;
+    border-radius: 10px;
+}
+.botao-letra:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    border-bottom: 10px;
+    border-color: red;
+}
+
+/*.botao-letra:visited{
+
+    animation:duvida 2s forwards;
+    /*transform: scale(20%);
+}
+*/
+@keyframes botao-clicado {
+
+    from {
+
+    }
+    to {
+        transform: scale(-2.5);
+        background: #22272c;
+    }
+
+}
+
+.certo{
+    background:#21BF73;
+    color: white;
+    animation: certoAnime 0.5s forwards;
+}
+@keyframes certoAnime {
+
+
+
+    from{
+        transform: translateY(-10px);
+    }
+
+}
+
+.errado{
+    background:#E83A14;
+    color: black;
+    animation: shake 0.3s forwards;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-2px, -2px, -2px);
+    }
+
+    20%, 80% {
+        transform: translate3d(9px, 2px, -2px);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, -4px, -4px);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.clicado {
+    /*background: #22272c;*/
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    border-width: 0;
+
+    border-radius: 10px;
+}
+.acabou{
+
+    background:#72757e ;
+
+
+}
+.acabou:hover{
+    transform: scale(1);
+}
+@keyframes venceu {
+    to{
+        background:url("../images/venceu.svg")  left no-repeat  #2cb67d ;
+        background-size: contain;
+        animation: 2s;
+        border-color: #2cb67d;
+
+    }
+}
+@keyframes perdeu {
+    to{
+        background:url("../images/venceu.svg")  left no-repeat #2e0000 ;
+        background-size: contain;
+        animation: 2s;
+        border-color:#2e0000;
+
+    }
+}

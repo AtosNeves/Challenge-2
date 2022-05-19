@@ -1,0 +1,98 @@
+
+
+
+h1{
+    margin: 5%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3em;
+}
+i{
+    display: block;
+    position: relative;
+    text-align: center;
+
+}
+.imagem {
+    background: url("../images/skull.svg")top center no-repeat ;
+    background-size: contain;
+    position: relative;
+    width: 35%;
+    height: 35%;
+   // background: black;
+    margin: auto;
+    top: 6%;
+}
+#modal-final{
+    visibility: hidden;
+    background:#94a1b2;
+    color:#fffffe ;
+    position: fixed;
+    z-index: 100;
+    margin: auto auto;
+    padding: 10px;
+    top: 20%;
+    left: 35%;
+
+
+
+    width: 30vw;
+    min-width: 28vw;
+    height: 60vh;
+    //border: 6px black solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+   // animation: aparecer 1s;
+
+
+}
+@keyframes aparecer {
+    0% {
+        transform:translateX(1000px);
+    }
+    80% {
+        transform:translateX(0px);
+        border-radius:75px;
+        height:75px;
+        width:75px;
+    }
+    90% {
+        border-radius:3px;
+        height:182px;
+        width:247px;
+    }
+    100% {
+        border-radius:3px;
+        height:162px;
+        width:227px;
+    }
+}
+
+.botoes-alerta{
+    display: flex;
+
+    position: relative;
+    margin:0 auto;
+    width: 70%;
+    height: 20%;
+   // background: red;
+    //align-items:;
+
+
+}
+.b-alerta{
+    width: 200px;
+    margin: 10px auto;
+
+}
+#novamente {
+    border:0;
+
+}
+#home{
+    background: #ff8906;
+    border: 0;
+}

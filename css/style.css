@@ -1,0 +1,117 @@
+body{
+    background:#2D3436 no-repeat;
+    background-size: cover;
+}
+header{
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    cursor: crosshair;
+    color: #dddddd;
+}
+a:visited{
+    text-decoration: none;
+}
+.div-logo{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 200px;
+    height: 80px;
+    background: url("../images/alura-logo.svg") no-repeat;
+    background-size: contain  ;
+
+}
+.botoes{
+    display: flex;
+
+    position: relative;
+
+    width: 50%;
+    height: 500px;
+    top: 50%;
+    margin: 5% auto;
+    overflow-block: auto;
+    animation: botao-animado 1s;
+}
+.botao{
+    position: relative;
+    margin:auto auto;
+
+
+    width: 250px;
+    height: 60px;
+    background:#ff8906;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+
+
+
+
+}
+
+.botao:hover{
+
+    border-image-outset: initial ;
+
+
+}
+#jogar:hover{
+    animation: forca 0.5s forwards;
+}
+#adcionar:hover {
+    animation: adcionar 0.5s forwards;
+}
+@keyframes forca {
+    from{
+
+    }
+    to{
+
+        background: url("../images/gallow.png") no-repeat left #f25f4c;
+        transform: translate(10px);
+
+        border-radius: 20px;
+        cursor: crosshair;
+    }
+}
+@keyframes adcionar {
+    from{
+
+    }
+    to{
+
+        background:  no-repeat left #f25f4c;
+        transform: translate(10px);
+
+        border-radius: 20px;
+        cursor: crosshair;
+    }
+}
+.botao h1{
+    position: relative;
+    display: block;
+    text-align:center;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    margin: 0 0;
+    top: 10px;
+    color: #fffffe;
+    font-family: 'Anton', sans-serif;
+}
+
+@keyframes botao-animado {
+
+    from{
+    transform: translateX(-50px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+    
+}
+
+
