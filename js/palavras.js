@@ -231,8 +231,8 @@ function palavrasSecretas(){
    palavraSecreta = palavras[indicePalavra].nome;
    palavraCategoria = palavras[indicePalavra].categoria;
 
-    console.log(palavraSecreta);
-    console.log(palavraCategoria);
+    //console.log(palavraSecreta);
+    //console.log(palavraCategoria);
 
     for (const b of botao) {
         //console.log("asda");
