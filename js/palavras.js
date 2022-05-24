@@ -180,7 +180,7 @@ function comparaListas(letra,botao) {
         }
     } else {
         for (var i = 0; i < palavraSecreta.length; i++) {
-            co
+
 
             if (palavraSecreta[i] === letra) {
                 //console.log(letra);
