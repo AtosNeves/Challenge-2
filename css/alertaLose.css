@@ -2,7 +2,7 @@
 
 
 h1{
-    margin: 5%;
+    margin: 10%;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     font-size: 3em;
@@ -11,9 +11,8 @@ i{
     display: block;
     position: relative;
     text-align: center;
-
 }
-.imagem {
+.imagem-perdeu {
     background: url("../images/skull.svg")top center no-repeat ;
     background-size: contain;
     position: relative;
@@ -21,12 +20,13 @@ i{
     height: 35%;
    // background: black;
     margin: auto;
-    top: 6%;
+    top: 1%;
 }
+
 #modal-final{
     visibility: hidden;
     background:#94a1b2;
-    color:#fffffe ;
+
     position: fixed;
     z-index: 100;
     margin: auto auto;
@@ -35,7 +35,7 @@ i{
     left: 35%;
 
 
-
+    color: #dddddd;
     width: 30vw;
     min-width: 28vw;
     height: 60vh;
@@ -46,6 +46,42 @@ i{
     justify-content: right;
     align-items: center;
 
+
+
+}
+.imagem-venceu {
+    background: url("../images/winModal.svg")top center no-repeat ;
+    background-size: contain;
+    position: relative;
+    width:80%;
+    height: 80%;
+    // background: black;
+    margin: auto;
+    //top: 3%;
+}
+#modal-final-vitoria{
+    visibility: hidden;
+    background:#1e824c ;
+    //color:#fffffe ;
+    position: fixed;
+    z-index: 100;
+    margin: auto auto;
+    padding: 10px;
+    top: 15%;
+    left: 35%;
+
+
+
+    width: 30vw;
+    min-width: 28vw;
+    height: 70vh;
+    //border: 6px black solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    color: #dddddd;
 
 
 }
@@ -60,12 +96,12 @@ i{
 
 .botoes-alerta{
     display: flex;
-
+    //border-radius: 25px;
     position: relative;
     margin:0 auto;
     width: 90%;
     height: 20%;
-   // background: red;
+   //background: red;
     //align-items:;
 
 
@@ -77,10 +113,16 @@ i{
     height: 80px;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.2em;
-    color: black;
+    color: #333333;
     cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold ;
 }
-
+.b-alerta:hover{
+    color: black;
+    font-size: 125%;
+    transition: 0.3s;
+}
 #novamente {
     border:0;
 
@@ -88,4 +130,8 @@ i{
 #home{
     background: #ff8906;
     border: 0;
+}
+#novamente2 {
+    border:0;
+
 }

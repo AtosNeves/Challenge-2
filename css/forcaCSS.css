@@ -221,7 +221,7 @@ a{
 }
 @keyframes venceu {
     to{
-        background:url("../images/venceu.svg")  left no-repeat  #2cb67d ;
+        background:url("../images/win.svg")  left no-repeat  #2cb67d ;
         background-size: contain;
         animation: 2s;
         border-color: #2cb67d;

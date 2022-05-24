@@ -71,16 +71,31 @@
 
 
 
-<script src="./js/apagarLetra.js"></script>
+
+
+
+<script src="js/listaPalavras.js"></script>
 <script src="./js/palavras.js"></script>
 <div id="modal-final" class=alerta-div">
       
-      <div class="imagem"></div>
-      <h1>Não foi dessa vez</h1>
+      <div class="imagem-perdeu"></div>
+      <h1>Não foi dessa vez...</h1>
       <div class="botoes-alerta">
-	    <button class = "b-alerta" id="novamente" onclick="location.href='forca.html'"> Novamente falta css aqui
+	    <button class = "b-alerta" id="novamente" onclick="location.href='forca.html'">Jogar novamente
 	    </button>
-	    <button class = "b-alerta"  id="home" onclick="location.href='index.html'">Home falta css aqui </button>
+	    <button class = "b-alerta"  id="home" onclick="location.href='index.html'">Início</button>
+      </div>
+</div>
+
+<div id="modal-final-vitoria" class=alerta-div">
+      
+      <div class="imagem-venceu"></div>
+      <h1>Parabéns!!!</h1>
+      <div class="botoes-alerta">
+	    <button class = "b-alerta" id="novamente2" onclick="location.href='forca.html'">Jogar novamente
+	    </button>
+	    <button class = "b-alerta"  id="home2" onclick="location.href='index.html'">Início
+	    </button>
       </div>
 </div>
 </body>

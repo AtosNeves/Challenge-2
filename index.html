@@ -3,7 +3,7 @@
 <head>
       <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-      
+      <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link rel="stylesheet" href="css/reset.css">
@@ -17,8 +17,25 @@
 <body>
 <div class="botoes">
       <div class="botao" id="jogar" onclick="location.href='forca.html'"><h1>JOGAR</h1></div>
-      <div class="botao" id="adcionar" onclick="location.href='index.html'"><h1 >ADCIONAR</h1></div>
+      
+      <div class="botao" id="adcionar" onclick="bAdcionar"><h1 >ADCIONAR</h1></div>
+</div>
+
+<div id="modal-adcionar">
+      <div id="entradas">
+	    <label></label>
+	    <label for = "entrada-categoria"></label><h3>Categoria</h3>
+	    <input type="text" id="entrada-categoria">
+	    <label for = "entrada-palavra"></label><h3>Palavra</h3>
+	    <input type="text" id="entrada-palavra">
+      </div>
+      	<div>
+	    <button class ="botao"  id="home2"><h1>Adicionar</h1>
+	    </button>
+      </div>
 </div>
 <script src="js/palavras.js"></script>
+<script src="js/adcionar.js"></script>
+<script src="js/listaPalavras.js"></script>
 </body>
 </html>
