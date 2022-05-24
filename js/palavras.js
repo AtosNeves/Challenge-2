@@ -11,7 +11,7 @@ var palavraSecreta;
 
 var botao = document.getElementsByClassName("botao-letra");
 
-console.log(botao);
+
 
 
 
@@ -22,18 +22,17 @@ function palavrasSecretas(){
    palavraSecreta = palavras[indicePalavra].nome;
    palavraCategoria = palavras[indicePalavra].categoria;
 
-    console.log(palavraSecreta);
-    console.log(palavraCategoria);
+
 
     for (const b of botao) {
-        //console.log("asda");
+
             b.addEventListener('click', function onClick() {
            // b.classList.add("clicado","errado");
             b.classList.remove("botao-letra");
             //console.log(b.value);
             b.setAttribute("disabled","disabled");
 
-            //document.getElementById("c").disabled = true;
+
         });
     }
 
@@ -52,7 +51,7 @@ function comecarJogo(){
 
     const palavraSorteada = document.getElementById("palavra-sorteada");
     palavraSorteada.innerHTML = "";
-    console.log(palavras);
+
     for(let j = 0; j < palavraSecreta.length;j++){
 
         if (palavraLen[j]===undefined){
@@ -107,7 +106,7 @@ function comparaListas(letra,botao) {
                 let g2 = document.querySelector(".forca-div");
                 g2.style.background="url('./images/forca2.svg')  left no-repeat #636E72";
                 g2.style.backgroundSize = "contain";
-                console.log(tentativas);
+                //console.log(tentativas);
                 break;
             case 3:
                 let g3 = document.querySelector(".forca-div");
@@ -137,7 +136,7 @@ function comparaListas(letra,botao) {
 
 
 
-        console.log(letra);
+        //console.log(letra);
 
         var buti = document.getElementById(letra);
 
@@ -164,18 +163,15 @@ function comparaListas(letra,botao) {
             somFim.play();
             setTimeout(function(){
                 document.querySelector(".forca-div").style.animation ="perdeu 0.5s forwards";
-                //window.alert("falou");
-                //document.querySelector("#modal-final").style.visibility="visible";
-                console.log("Executed after 3 second");
+
             }, 1500);
 
 
             setTimeout(function(){
-                //document.querySelector(".forca-div").style.animation ="perdeu 0.5s forwards";
-                //window.alert("falou");
+
                 document.querySelector("#modal-final").style.animation=" aparecer 0.5s";
                 document.querySelector("#modal-final").style.visibility="visible";
-                console.log("Executed after 3 second");
+
             }, 3000);
 
 
@@ -184,10 +180,10 @@ function comparaListas(letra,botao) {
         }
     } else {
         for (var i = 0; i < palavraSecreta.length; i++) {
-            console.log("adfgg");
+            co
 
             if (palavraSecreta[i] === letra) {
-                console.log(letra);
+                //console.log(letra);
                 var som = new Audio("./audio/win.mp3");
                 som.volume = 0.5;
                 som.play();
@@ -217,13 +213,13 @@ function comparaListas(letra,botao) {
             document.querySelector(".forca-div").style.animation ="venceu 0.5s forwards";
             setTimeout(function(){
 
-                //window.alert("falou");
+
 
                document.querySelector("#modal-final-vitoria").style.visibility="visible";
-                //console.log("Executed after 3 second");
+
             }, 3000);
 
-            console.log("win");
+            c
             tentativas = 0;
         }
 
