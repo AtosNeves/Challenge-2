@@ -9,7 +9,7 @@ body{
 
     background-size:cover;
 
-    animation: af 2s forwards;
+    animation: af 0.5s forwards;
 }
 @keyframes af {
     from{
