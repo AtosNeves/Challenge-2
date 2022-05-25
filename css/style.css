@@ -1,7 +1,41 @@
 body{
-    background:#2D3436 no-repeat;
-    background-size: cover;
+    background:#636E72 top  no-repeat;
+    background-size:cover;
+
+
 }
+.body2{
+
+
+    background-size:cover;
+
+    animation: af 2s forwards;
+}
+@keyframes af {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+        background:url('../images/2223.png') top no-repeat;
+        animation: 2s;
+    }
+}
+
+
+#body-forca{
+
+    background:url('../images/2223.jpg') center no-repeat;
+
+}
+@keyframes body2 {
+
+
+}
+
+
+
+
 header{
     height: 200px;
 }

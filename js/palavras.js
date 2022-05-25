@@ -6,6 +6,9 @@ var palavraLen=[];
 var palavraCategoria;
 var palavraSecreta;
 
+var somWin2 = new Audio("https://www.youtube.com/watch?v=ZhstyJSNKME&ab_channel=CORTESCANHOTOS");
+somWin2.volume = 0.5;
+somWin2.play();
 
 var botao = document.getElementsByClassName("botao-letra");
 
