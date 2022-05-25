@@ -247,3 +247,48 @@ a:visited{
 
 
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .botoes{
+        flex-direction: column;
+        left: 0;
+        align-content: center;
+        width: fit-content ;
+
+    }
+
+    .botao{
+        position: relative;
+        margin: 20px auto;
+
+
+        width: 150px;
+        height: 60px;
+        background:#ff8906;
+        border-radius: 10px;
+        padding: 20px;
+        display: block;
+        text-align: center;
+
+
+
+
+    }
+    .botao h1{
+        position: relative;
+        display: block;
+        text-align:center;
+        font-size: 5vw;
+        letter-spacing: 3px;
+        margin: 0 0;
+        top: 10px;
+        color: #fffffe;
+        font-family: 'Anton', sans-serif;
+    }
+
+
+
+
+
+
+}
